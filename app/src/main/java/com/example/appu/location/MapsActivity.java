@@ -124,9 +124,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        //mMap.clear();
         mMap = googleMap;
-        mMap.clear();
+        //mMap.clear();
 
         location.addValueEventListener(new ValueEventListener() {
             @Override
@@ -146,7 +145,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         });
-
+        mMap.clear();
 
     }
 
